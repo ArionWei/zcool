@@ -1,0 +1,184 @@
+body {
+   width: 100%;
+   height: 100%;
+   font: 14px '微软雅黑';
+}
+
+#container {
+   height: 100%;
+}
+
+/*页面头部*/
+.header {
+   height: 60px;
+   background: rgba(0, 0, 0, 0.8);
+}
+
+.headerContent {
+   width: 980px;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.logo {
+   float: left;
+   height: 100%;
+   line-height: 76px;
+}
+
+/*导航*/
+.nav {
+   float: right;
+}
+
+.nav li {
+   float: left;
+   width: 90px;
+   line-height: 60px;
+   text-align: center;
+   color: #fff;
+}
+
+.nav li:hover, li.active {
+   background: #fc0;
+   color: #000;
+}
+
+.nav li:hover > a, li.active > a {
+   background: #fc0;
+   color: #000;
+}
+
+/*内容部分*/
+.content {
+   position: relative;
+   overflow: hidden;
+}
+
+/*小圆点*/
+.points {
+   position: fixed;
+   right: 20px;
+   top: 300px;
+   z-index: 99;
+}
+
+.points li {
+   width: 10px;
+   height: 10px;
+   border: 1px solid #000;
+   border-radius: 50px;
+   margin: 10px 0;
+}
+
+.points li.active, .points li:hover {
+   background-color: #000;
+}
+
+/*内容列表*/
+.contentList {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   transition: all 1s;
+}
+
+.contentList li {
+   overflow: hidden;
+}
+
+/*第一页*/
+.firstPage {
+   background: url("../img/s1.jpg") no-repeat;
+}
+
+.firstPage .wenzi {
+   width: 980px;
+   margin: 0 auto;
+}
+
+/*第二页*/
+.secondPage {
+   background: url("../img/s2.jpg") no-repeat;
+}
+
+.pageImage {
+   position: absolute;
+   right: 100px;
+   bottom: 50px;
+}
+
+.pageRight {
+   position: absolute;
+   right: 130px;
+   top: 100px;
+   padding-right: 20px;
+   border-right: 2px solid;
+   text-align: right;
+}
+
+.pageRight h1 {
+   font-size: 34px;
+   color: #333;
+   font-weight: 100;
+}
+
+.pageRight p {
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 18px;
+   color: #333;
+}
+
+.pageRight a {
+   height: 100%;
+   color: #333;
+}
+
+.pageLeft {
+   height: 100%;
+}
+
+.pageLeft .picList {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   padding-left: 100px;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.pageLeft .picList li {
+   position: relative;
+   float: left;
+   text-align: center;
+   font-size: 18px;
+   margin-top: 100px;
+   margin-left: 20px;
+}
+
+.pageLeft .picList li p {
+   margin: 20px 0;
+}
+
+.thirdPage {
+   background: url("../img/s3.jpg") no-repeat;
+}
+
+.fourthPage {
+   background: url("../img/s4.jpg") no-repeat;
+}
+
+.fifthPage {
+   background: url("../img/s5.jpg") no-repeat;
+}
+
+.bg-image {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-size: 100% 100%;
+}
